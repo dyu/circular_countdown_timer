@@ -29,7 +29,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final int _duration = 10;
+  final int _duration = 50;
   final CountDownController _controller = CountDownController();
 
   @override
@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
           textAlign: TextAlign.justify,
 
           // Format for the Countdown Text.
-          textFormat: CountdownTextFormat.S,
+          textFormat: CountdownTextFormat.MM_SS,
 
           // Handles Countdown Timer (true for Reverse Countdown (max to 0), false for Forward Countdown (0 to max)).
           isReverse: true,
@@ -107,19 +107,19 @@ class _MyHomePageState extends State<MyHomePage> {
           // This Callback will execute when the Countdown Starts.
           onStart: () {
             // Here, do whatever you want
-            debugPrint('Countdown Started');
+            //debugPrint('Countdown Started');
           },
 
           // This Callback will execute when the Countdown Ends.
           onComplete: () {
             // Here, do whatever you want
-            debugPrint('Countdown Ended');
+            //debugPrint('Countdown Ended');
           },
 
           // This Callback will execute when the Countdown Changes.
           onChange: (String timeStamp) {
             // Here, do whatever you want
-            debugPrint('Countdown Changed $timeStamp');
+            //debugPrint('Countdown Changed $timeStamp');
           },
 
           /* 
